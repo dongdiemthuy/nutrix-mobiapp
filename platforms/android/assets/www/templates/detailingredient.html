@@ -1,0 +1,18 @@
+<ion-view view-title="Detail ingredient">
+  <ion-content>
+   <h4>Name: {{ingredient.label}}</h4>
+   <h6>Nutrient List </h6>
+  
+    	<div class="row" >
+    		<div class="col">Name</div>
+    		<div class="col">Amount</div>
+        <div class="col">Unit Type</div>
+    	</div>
+    	<div class="row" ng-repeat="nutrientContentList in ingredient.nutrientContentList">
+    		<div class="col">{{nutrientContentList.name}}</div>
+    		<div class="col">{{nutrientContentList.amount}}</div>
+       <div class="col">{{getNutrientUnitType(nutrientContentList.id)}}</div>
+    	</div>
+	</div>
+  </ion-content>
+</ion-view>

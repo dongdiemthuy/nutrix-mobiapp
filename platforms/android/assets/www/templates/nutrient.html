@@ -1,0 +1,24 @@
+<ion-view view-title="Nutrients">
+
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="nutrient in nutrients | filter:searchText" href="#/app/nutrient/{{nutrient.id}}" >
+         <div class="col"> {{nutrient.name}}</div>
+      </ion-item>
+    </ion-list>
+
+    <ion-infinite-scroll
+        on-infinite="loadMoreNutrients()"
+        distance="1%">
+    </ion-infinite-scroll>
+  </ion-content>
+
+<ion-footer-bar align-title="left" >
+  <div class="bar bar-header item-input-inset">
+      <label class="item-input-wrapper">
+        <i class="icon ion-ios7-search placeholder-icon"></i>
+        <input ng-model="searchText" type="search" placeholder="Search">
+      </label>
+  </div>
+</ion-footer-bar>
+</ion-view>

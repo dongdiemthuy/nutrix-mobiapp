@@ -1,0 +1,29 @@
+<ion-view  view-title="Ingredient">
+
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="ingredient in ingredients" href="#/app/ingredient/{{ingredient.id}}" >
+        {{ingredient.label}}
+      </ion-item>
+    </ion-list>
+
+    <ion-infinite-scroll
+        ng-if="moreDataCanBeLoaded()"
+        on-infinite="loadMoreIngredients()"
+        distance="1%">
+    </ion-infinite-scroll>
+  </ion-content>
+  
+<ion-footer-bar align-title="left" >
+  <div class="bar bar-header item-input-inset">
+      <label class="item-input-wrapper">
+        <i class="icon ion-ios7-search placeholder-icon"></i>
+        <input ng-model="searchText" type="search" placeholder="Search">
+      </label>
+      <button class="button button-positive" ng-click="doSearchIngredients(searchText)" >
+      Load
+    </button>
+  </div>
+</ion-footer-bar>
+
+</ion-view>
