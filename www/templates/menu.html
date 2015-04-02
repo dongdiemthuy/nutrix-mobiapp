@@ -1,6 +1,6 @@
 <ion-side-menus enable-menu-with-back-views="false">
   <ion-side-menu-content>
-    <ion-nav-bar class="bar-stable">
+    <ion-nav-bar class="menubar ">
       <ion-nav-back-button>
       </ion-nav-back-button>
 
@@ -13,21 +13,21 @@
   </ion-side-menu-content>
 
   <ion-side-menu side="left">
-    <ion-header-bar class="bar bar-header bar-balanced" >
+    <ion-header-bar class="bar  bar-header menubar" >
       <h1 class="title">Menu</h1>
-    </ion-header-bar>
-    <ion-content>
+    </ion-header-bar >
+    <ion-content class="background">
       <ion-list>
-        <ion-item nav-clear menu-close ng-click="login()">
+        <ion-item nav-clear menu-close  class="wordcolor" ng-click="login()" >
           Login
         </ion-item>
-        <ion-item nav-clear menu-close ng-click="registration()">
+        <ion-item nav-clear menu-close class="wordcolor" ng-click="registration()" >
           Resgistration
         </ion-item>
-        <ion-item nav-clear menu-close href="#/app/ingredient">
+        <ion-item nav-clear menu-close class="wordcolor" href="#/app/ingredient">
           Ingredient
         </ion-item>
-        <ion-item nav-clear menu-close href="#/app/nutrient"  >
+        <ion-item nav-clear menu-close class="wordcolor" href="#/app/nutrient"  >
           Nutrient
         </ion-item>
       </ion-list>

@@ -1,4 +1,4 @@
-<ion-view  view-title="Ingredient">
+<ion-view view-title="Ingredient">
 
   <ion-content>
     <ion-list>
@@ -15,15 +15,14 @@
   </ion-content>
   
 <ion-footer-bar align-title="left" >
-  <div class="bar bar-header item-input-inset">
+  <div class="bar bar-header item-input-inset ">
       <label class="item-input-wrapper">
         <i class="icon ion-ios7-search placeholder-icon"></i>
-        <input ng-model="searchText" type="search" placeholder="Search">
+        <input ng-model="searchText" type="search" placeholder="Search" >
       </label>
-      <button class="button button-positive" ng-click="doSearchIngredients(searchText)" >
+      <button class="load" ng-click="doSearchIngredients(searchText)" >
       Load
     </button>
   </div>
 </ion-footer-bar>
-
 </ion-view>

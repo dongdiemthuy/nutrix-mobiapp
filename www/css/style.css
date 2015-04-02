@@ -1,2 +1,24 @@
 /* Empty. Add your own CSS if you like */
 
+.menubar{
+	background:  #5B6E8C
+}
+
+.title{
+	color: white;
+}
+.wordcolor {
+	background-color: #c7d0e5;
+	color:#3b5998;
+}
+.background {
+	background-color: #c7d0e5;
+}
+.bartitile{
+	background:  #5B6E8C
+}
+
+.load{
+	color: white;
+	background: #5B6E8C;
+}
