@@ -1,6 +1,6 @@
 
 angular.module('starter.controllers', [])
-.constant('baseurl', 'http://192.168.0.149:7777')
+.constant('baseurl', 'http://app.nutrix.info:7777')
 .controller('AppCtrl', function($scope, $ionicModal, $timeout, baseurl) {
   // Form data for the login modal
   $scope.loginData = {};
